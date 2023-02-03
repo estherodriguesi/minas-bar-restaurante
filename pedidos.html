@@ -1,0 +1,314 @@
+<!DOCTYPE html> <html lang="pt~br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça o seu pedido </title>
+
+    <style>
+    #fundo{
+        background-color: rgb(196, 145, 69);
+        margin: 100px;
+    }
+
+    .titulo{
+font-size: 35px;
+color:rgb(108, 8, 8);;
+display:flex ;
+justify-content: center;
+}
+
+.nomes{
+    font-size: 20px;
+    color:black;
+    display:flex ;
+    justify-content: center;
+}
+
+.tt2{
+color: rgba(120, 52, 0, 0.801);
+font-size: 45px;
+  
+
+}
+.qnt{
+    font-size: 20px;
+    color:black;
+    display:flex ;
+    justify-content: center;
+}
+
+ #botao{
+    font-size: 20px;
+    color:black;
+    display:flex ;
+    justify-content: center;
+}
+ 
+</style>
+
+</head>
+<body id="fundo">
+    <h2 class="tt2">Pratos do cantinho mineiro</h2>
+    <form name="formulario_rodizio" id="fml_rodizio">
+        
+
+
+
+            <div>
+                <input type="checkbox" id="id_cb_fritas" name="cb_fritas">
+                <label for="id_cb_fritas">Fritas</label>
+            </div>
+
+
+            <div>
+                <input type="checkbox" id="id_cb_batata_rustica" name="cb_batata_rustica">
+                <label for="id_cb_rustica">Batata Rustica</label>
+            </div>
+            
+            <div>
+                <input type="checkbox" id="id_cb_mandioquinha" name="cb_mandioquinha">
+                <label for="id_cb_mandioquinha">Mandioquinha</label>
+            </div>
+            
+            <div>
+                <input type="checkbox" id="id_cb_torresmo" name="cb_torresmo">
+                <label for="id_cb_torresmo">Torresmo</label>
+            </div>
+
+            
+            <div>
+                <input type="checkbox" id="id_cb_linguaca_calabresa" name="cb_linguaca_calabresa">
+                <label for="id_cb_linguaca_calabresa">Linguiça Calabresa</label>
+            </div>
+            
+            <div>
+                <input type="checkbox" id="id_cb_feijão_tropeiro" name="cb_feijão_tropeiro">
+                <label for="id_cb_feijão_tropeiro">Feijão Tropeiro</label>
+            </div>
+            
+            <div>
+                <input type="checkbox" id="id_cb_costelinha" name="cb_costelinha">
+                <label for="id_cb_costelinha">Costelinha</label>
+            </div>
+            
+            <div>
+                <input type="checkbox" id="id_cb_frango_a_passarinho" name="cb_frango_a_passarinho">
+                <label for="id_cb_frango_a_passarinho">Frango a Passarinho</label>
+            </div>
+            
+            <div>
+                <label for="preco_rodizio">Preço por Item: R$</label>
+                <input type="text" value=" 20,00 " readonly id='preco_rodizio'>
+            
+                </div>
+
+
+
+    </form >
+
+
+    <h2 class="tt2">Doces</h2>
+    <form name="formulario_doces" id="fml_doces">     
+
+        <div>
+            <input type="checkbox" id="id_cb_doce_leite" name="cb_doce_leite">
+            <label for="id_cb_doce_leite">Doce de Leite</label>
+          </div>
+       
+          <div>
+            <input type="checkbox" id="id_cb_doce_abobora" name="cb_doce_abobora">
+            <label for="id_cb_doce_abobora">Doce de Abobora</label>
+          </div>
+       
+          <div>
+            <input type="checkbox" id="id_cb_cocada_cremosa" name="cb_cocada_cremosa">
+            <label for="id_cb_cocada_cremosa">Cocada Cremosa</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="id_cb_arroz_doce" name="cb_arroz_doce">
+            <label for="id_cb_arroz_doce">Arroz Doce</label>
+          </div>
+
+        <div>
+            <label for="preco_doces">Preço por Doce: R$</label>
+            <input type="text" value="10,00" readonly id='preco_rodizio'>
+        
+            </div>
+
+    </form>
+
+
+    <h2 class="tt2">Bebidas</h2>
+    <form name="formulario_bebidas" id="fml_bebidas">     
+
+        <div>
+            <input type="checkbox" id="id_cb_agua" name="cb_agua">
+            <label for="id_cb_agua">Água</label>
+          </div>
+      
+        <div >
+            <label for="qtd_agua">Quantidade</label>
+            <input type="number" id='qtd_agua'>
+        </div>
+        <div >
+            <label for="preco_agua">Preço por Água: R$</label>
+            <input type="text" value="3,00" readonly id='preco_agua'>
+        
+         </div>
+
+            <br>
+         <div>
+            <input type="checkbox" id="id_cb_agua_gas" name="cb_agua_gas">
+            <label for="id_cb_agua_gas">Água c/ Gás</label>
+          </div>
+      
+        <div>
+            <label for="qtd_agua_gas">Quantidade</label>
+            <input type="number" id='qtd_agua_gas'>
+        </div>
+        <div>
+            <label for="preco_agua_gas">Preço por Água c/ Gás: R$</label>
+            <input type="text" value="4,00" readonly id='preco_agua_gas'>
+        
+         </div>
+    <br>
+         <div>
+            <input type="checkbox" id="id_cb_coca_cola" name="cb_coca_cola">
+            <label for="id_cb_coca_cola">Coca Cola</label>
+          </div>
+      
+        <div>
+            <label for="qtd_coca_cola'">Quantidade</label>
+            <input type="number" id='qtd_coca_cola'>
+        </div>
+        <div>
+            <label for="preco_coca_cola">Preço por Coca Cola: R$</label>
+            <input type="text" value="7,00" readonly id='preco_coca_cola'>
+        
+</div>
+<br>
+<div>
+            <input type="checkbox" id="id_cb_coca_cola_zero" name="cb_coca_cola_zero">
+            <label for="id_cb_coca_cola_zero">Coca Cola Zero</label>
+          </div>
+      
+        <div>
+            <label for="qtd_coca_cola_zero'">Quantidade</label>
+            <input type="number" id='qtd_coca_cola_zero'>
+        </div>
+        <div>
+            <label for="preco_coca_cola_zero">Preço por Coca Cola Zero: R$</label>
+            <input type="text" value="8,00" readonly id='preco_coca_cola_zero'>
+        
+</div>
+
+<br>
+<div>
+            <input type="checkbox" id="id_cb_suco_abacaxi" name="cb_suco_abacaxi">
+            <label for="id_cb_suco_abacaxi">Suco Abacaxi</label>
+          </div>
+      
+        <div>
+            <label for="qtd_suco_abacaxi'">Quantidade</label>
+            <input type="number" id='qtd_suco_abacaxi'>
+        </div>
+        <div>
+            <label for="preco_suco_abacaxi">Preço por Suco Abacaxi: R$</label>
+            <input type="text" value="6,00" readonly id='preco_suco_abacaxi'>
+        
+</div>
+
+<br>
+<div>
+            <input type="checkbox" id="id_cb_suco_laranja" name="cb_suco_laranja">
+            <label for="id_cb_suco_laranja">Suco Laranja</label>
+          </div>
+      
+        <div>
+            <label for="qtd_suco_laranja'">Quantidade</label>
+            <input type="number" id='qtd_suco_laranja'>
+        </div>
+        <div>
+            <label for="preco_suco_laranja">Preço por Suco Laranja: R$</label>
+            <input type="text" value="6,00" readonly id='preco_suco_laranja'>
+        
+</div>
+
+<br>
+<div>
+            <input type="checkbox" id="id_cb_suco_limao" name="cb_suco_limao">
+            <label for="id_cb_suco_limao">Suco de Limão</label>
+          </div>
+      
+        <div>
+            <label for="qtd_suco_limao'">Quantidade</label>
+            <input type="number" id='qtd_suco_limao'>
+        </div>
+        <div>
+            <label for="preco_suco_limao">Preço por Suco de Limão: R$</label>
+            <input type="text" value="6,00" readonly id='preco_suco_limao'>
+        
+</div>
+
+
+
+    </form>
+    <br>
+     <input type='submit' onclick="btn()" name='enviar' class="nomes">
+   <br>
+     <div>
+         <p>
+            <label for="resultado">Preço Final</label>
+            <input type="text" id="resultado">  
+         </p>
+     </div>
+
+<script>
+    
+
+ function btn  (){
+
+ let frm_rodizio = document.getElementById('fml_rodizio').elements
+ let frm_doces = document.getElementById('fml_doces').elements
+ let frm_bebidas = document.getElementById('fml_bebidas').elements
+
+ let preco_individual_rodizio = parseFloat(frm_rodizio[8].value)
+ let preco_individual_doces = parseFloat(frm_doces[4].value)
+ 
+ 
+ let preco_total = 0
+
+for(i = 0; i<frm_rodizio.length-1; i++)
+        if(frm_rodizio[i].checked)
+            preco_total = preco_total + preco_individual_rodizio
+
+
+for(i = 0; i<frm_doces.length-1; i++)
+        if(frm_doces[i].checked)
+            preco_total = preco_total + preco_individual_doces            
+
+for(i=3 ;i<frm_bebidas.length+3;i=i+3)
+    if(frm_bebidas[i-3].checked)
+    {
+        let qtd = parseInt(frm_bebidas[i-2].value)
+        if(qtd > 0){
+        let preco_individual_bebida = parseFloat(frm_bebidas[i-1].value)        
+        preco_total = preco_total + qtd * preco_individual_bebida
+       }
+    }
+
+
+document.getElementById('resultado').value =  preco_total
+
+}
+</script>
+
+
+
+
+
+
+</body>
+</html>
